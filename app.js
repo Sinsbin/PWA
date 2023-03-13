@@ -1,16 +1,16 @@
-const express = require("express");
+var http = require('http');
+var fs = require('fs');
 
-const app = express();
-app.set('views', './view');
-app.set('view engine', 'ejs')
 
-app.get('/', (req, res) => {
-    res.render('index',{
-        
-    })
-  })
-  
+const PORT=3000; 
 
-  app.listen(3000,()=>{
-    console.log("listen 3000")
-  })
+fs.readFile('./index.html', function (err, html) {
+
+    if (err) throw err;    
+
+    http.createServer(function(request, response) {  
+        response.writeHeader(200, {"Content-Type": "text/html"});  
+        response.write(html);  
+        response.end();  
+    }).listen(PORT);
+});
