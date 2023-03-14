@@ -39,9 +39,9 @@
    "density": "4.0"
   }
  ],
- "start_url": "https://pwa-wine.vercel.app/",
+ "start_url": "*",
 "background_color": "#000",
 "theme_color": "#536878",
 "display": "standalone",
-"prefer_related_applications":"true"
+"prefer_related_applications":true
 }
