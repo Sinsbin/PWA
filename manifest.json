@@ -40,8 +40,9 @@
    "density": "4.0"
   }
  ],
- "start_url": "http://127.0.0.1:8887/index.ejs/",
+ "start_url": ".",
 "background_color": "#000",
 "theme_color": "#536878",
-"display": "standalone"
+"display": "standalone",
+"prefer_related_applications":"true"
 }
