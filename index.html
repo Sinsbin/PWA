@@ -237,20 +237,7 @@
       <title>Document</title>
 </head>
 <body>
-  <script src="./serviceworker.js">
-    if ('serviceworker' in navigator) {
-      console.log("hi")
-  navigator.serviceWorker
-    .register('./serviceworker.js') // 註冊 Service Worker
-    .then(function(reg) {
-      console.log('Registration succeeded. Scope is ' + reg.scope); // 註冊成功
-    })
-    .catch(function(error) {
-      console.log('Registration failed with ' + error); // 註冊失敗
-    });
-}
-
-  </script>
+  
   <div class="resume">
     <div class="left">
       <h1>施承鑌</h1>
@@ -348,6 +335,20 @@
       </div>
     </div>
   </div>    
+  <script src="./serviceworker.js">
+    if ('serviceworker' in navigator) {
+      console.log("hi")
+  navigator.serviceWorker
+    .register('./serviceworker.js') // 註冊 Service Worker
+    .then(function(reg) {
+      console.log('Registration succeeded. Scope is ' + reg.scope); // 註冊成功
+    })
+    .catch(function(error) {
+      console.log('Registration failed with ' + error); // 註冊失敗
+    });
+}
+
+  </script>
 </body>
 </html>
 
